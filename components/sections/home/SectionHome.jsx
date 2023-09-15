@@ -11,7 +11,6 @@ const SectionHome = () => {
                     name: "Model emoji 1",
                     url: "/fiber/model-emoji-1",
                 },
-
             ],
         },
         {
@@ -84,6 +83,12 @@ const SectionHome = () => {
             ],
         },
         {
+            categoryName: "Front",
+            urlList: [
+                { name: "Lottie-Files", url: "/front//lottie-file/basic" },
+            ],
+        },
+        {
             categoryName: "P5",
             urlList: [
                 { name: "Boid", url: "/p5/boid" },
@@ -126,7 +131,6 @@ const SectionHome = () => {
                 })}
             </ul>
             <br /><br />
-            History
             <ul className={styles.categories}>
                 {historyList.map((categoryItem, categoryIndex) => {
                     return (

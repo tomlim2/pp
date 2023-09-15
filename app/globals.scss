@@ -1,9 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -171,23 +171,23 @@ table {
   color: #fff;
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
-h2{
+h2 {
   font-size: 2rem;
 }
-h3{
+h3 {
   font-size: 1.75rem;
 }
-h4{
+h4 {
   font-size: 1.25rem;
 }
-h5{
+h5 {
   font-size: 1rem;
 }
-p{
-  font-size: .875rem;
+p {
+  font-size: 0.875rem;
 }
 
 a {
@@ -200,23 +200,23 @@ a {
   }
 }
 
-.reference{
+.reference {
   margin-top: 8px;
 }
-a.reference-link{
-  font-size: .875rem;
+a.reference-link {
+  font-size: 0.875rem;
   font-weight: 200;
   font-style: italic;
   color: #666;
 }
-h2.title-info{
+h2.title-info {
   font-weight: 600;
   font-size: 1rem;
 }
-h3.category-name{
-  font-size: .875rem;
+h3.category-name {
+  font-size: 0.875rem;
 }
 
-.page{
+.page {
   padding: 48px 24px;
 }
