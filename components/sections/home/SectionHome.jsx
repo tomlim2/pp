@@ -2,13 +2,32 @@ import styles from "./SectionHome.module.scss";
 import Link from "next/link";
 
 const SectionHome = () => {
-    const routeInfo = [
+    const inProgressList = [
+        {
+            categoryName: "In progress",
+            urlList: [
+                { name: "Journey Game 3", url: "/fiber/journey-game3" },
+                {
+                    name: "Model emoji 1",
+                    url: "/fiber/model-emoji-1",
+                },
+
+            ],
+        },
+        {
+            categoryName: "To do",
+            urlList: [
+                { name: "URL simple db system", url: "/blender/geometry-node" },
+                { name: "In water environment", url: "/blender/ai-render" },
+            ],
+        },
+    ]
+    const historyList = [
         {
             categoryName: "Fiber",
             urlList: [
                 { name: "Journey Game 1", url: "/fiber/journey-game1" },
                 { name: "Journey Game 2", url: "/fiber/journey-game2" },
-                { name: "Journey Game 3", url: "/fiber/journey-game3" },
                 {
                     name: "Journey-Physics-Base",
                     url: "/fiber/journey-physics",
@@ -87,7 +106,29 @@ const SectionHome = () => {
     return (
         <section className="sectionHome">
             <ul className={styles.categories}>
-                {routeInfo.map((categoryItem, categoryIndex) => {
+                {inProgressList.map((categoryItem, categoryIndex) => {
+                    return (
+                        <li className={styles.category} key={categoryIndex}>
+                            <h2 className={styles.categoryName}>
+                                {categoryItem.categoryName}
+                            </h2>
+                            <ul className={styles.urlList}>
+                                {categoryItem.urlList.map((routeItem, routeIndex) => {
+                                    return (
+                                        <li key={routeIndex} className={styles.urlLink}>
+                                            <Link href={routeItem.url}>{routeItem.name}</Link>
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                        </li>
+                    );
+                })}
+            </ul>
+            <br /><br />
+            History
+            <ul className={styles.categories}>
+                {historyList.map((categoryItem, categoryIndex) => {
                     return (
                         <li className={styles.category} key={categoryIndex}>
                             <h2 className={styles.categoryName}>
